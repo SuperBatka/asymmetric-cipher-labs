@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Hash_MPW</class>
+ <widget class="QWidget" name="Hash_MPW">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>763</width>
+    <height>493</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QComboBox" name="hash_Box">
+       <item>
+        <property name="text">
+         <string>MD5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>SHA1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ГОСТ р 32.11.2012 (512bit)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="file_hash_Button">
+         <property name="text">
+          <string>Посчитать хэш файла</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="filename_Edit"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="input_text_Edit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="text_hash_Button">
+       <property name="text">
+        <string>Посчитать хэш текста</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="result_hash_Edit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
